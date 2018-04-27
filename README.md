@@ -81,9 +81,17 @@
   * ### git merge v/s git rebase
   | git merge | git rebase |
   | --------- | ---------- |
-  | git merge [sourceBranch] [targetBranch] | git checkout [sourceBranch] & git rebase [targetBranch] |
+  | `git merge [sourceBranch] [targetBranch]` | `git checkout [sourceBranch]` & `git rebase [targetBranch]` |
   | Create New merge commit in the target branch that ties to gather the history of both branches | Moves history of source branch to the tip of the target branch |
   | hard to read history | much cleaner history |
+
+  * ### create patch from commit history
+  | Sr. No. | Command | Description |
+  | ------- | ------- | ----------- |
+  | 1 | `git commit -m "commit to create diff"` | added new commit for which we want to create patch | 
+  | 2 | `git log` | compare the history |
+  | 3 | `git diff *PreviousCommit* *diffCommit* > myfile.diff` | It will create myfile.diff in active directory and contains comparative changes with previous history
+  | 4 | `git apply myfile.diff` | It will display changes as modified files 
 
 * # Other useful git commands
   | Sr. No. | Command | Description |
