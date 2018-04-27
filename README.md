@@ -1,4 +1,4 @@
-* #Basic Git Commands
+* # Basic Git Commands
 
   * ### Configuration
   | Sr. No. | Command | Description |
@@ -42,6 +42,7 @@
   | 2 | git commit -m "commit message" | commit changes to head|
   | 3 | git commit -a | commit any files you have added with git add and also commit any files you have changed since then |
   | 4 | git checkout -- *fileName* | If you mess us, you can replace the changes in your working tree with the last content in head (Changes added to the index, as well as new files, will be kept) |
+  | 5 | git reset -- *files* | unstage files, from stage to local area or undo git add command 
 
   * ### Tags
   | Sr. No. | Command | Description |
@@ -56,4 +57,40 @@
   | 2 | git log --pretty=oneline | display compressed log where each commit is one line|
   | 3 | git log --author=ankit patel | display commits of certain user|
   | 4 | git log --graph --oneline --decorate --all | ASCII art tree of all the branches with details |
-  | 5 | git log --name-status | display only files have changed|
+  | 5 | git log --name-status | display only files have changed |
+
+------------------------------------------------------------------------------------------------
+
+* # Next - 1
+
+  * ### Stash
+  | Sr. No. | Command | Description |
+  | ------- | ------- | ----------- |
+  | 1 | git stash | Temporarily stores all modified tracked files |
+  | 2 | git stash list | list all stashed changesets |
+  | 3 | git stash pop | restore the most recently stashed files |
+  | 4 | git stash apply | Restore stashed changes |
+  | 5 | git stash drop | Discards the most recently stashed changesets |
+
+  * ### Sync local repo with remote
+  | Sr. No. | Command | Description |
+  | ------- | ------- | ----------- |
+  | 1 | 1. git remote prune origin 
+        2. git fetch
+        3. git checkout *newBranch* | 1. It will remove branches which are not in use
+                                      2. It will fetch new remote branches
+                                      3. Create new brnach |
+  | 2 | git fetch --prune | Combined command of steps 1 & 2 in above |
+
+
+
+* # Other useful git commands
+  | Sr. No. | Command | Description |
+  | ------- | ------- | ----------- |
+  | 1 | gitk | opens git GUI
+  | 2 | git commit -c --reset-author | This would change the committer to you, best to use after a conflicting cherry-pick |
+  | 3 | git commit --amend | changes made will be included in last commit. need to force push after that |
+  | 4 | git push *remote* *branch* --prune | this would remove the remote branches with no local counterPart |
+  | 5 | git push *remote* *branch* --dry-run | The update won't be sent but all the other process would be done |
+  | 6 | git fetch *remote* *branch* --dry-run | show what would be done without actually doing it |
+  | 7 | git merge --abort | This will abort the current conflict resolution process, and try to reconstruct the pre-merge state, but the uncommitted or unstashed ones might not be reconstructed |
