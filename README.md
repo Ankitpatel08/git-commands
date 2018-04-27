@@ -17,7 +17,7 @@
         | 1       | `git init`                                                                 | create a new local repository                                                                                |
         | 2       | `git clone /path/to/repository`                                            | create a working copy of a local repository                                                                  |
         | 3       | `git clone username@host:/path/to/repository`                              | create working copy of remote repository                                                                     |
-        | 4       | `git remote add origin [server]`                                           | to connect local repository to remote repository to                                                          | push on server |
+        | 4       | `git remote add origin [server]`                                           | to connect local repository to remote repository to push on server                                           |
         | 5       | `git remove -v`                                                            | List all currently configured remore repositories                                                            |
         | 6       | `git push origin master`                                                   | send changes to the master branch of your remore repository                                                  |
         | 7       | `git status`                                                               | List the files you've changed and those you still need to add or commit                                      |
@@ -34,6 +34,8 @@
         | 15      | `git diff [sourceBranch] [targetBranch]`                                   | Preview changes before merging                                                                               |
         | 16      | `git fetch origin`                                                         | fetch the latest history from the remote and point your local brach at it (will keep local changes as it is) |
         | 17      | `git reset --hard origin/[branchName]`                                     | discard local changes and make local brnach same as remote repository                                        |
+        | 18      | `git clean -fd`                                     | delete untracked files                                        
+                                |
 
 -   ### Files
 
