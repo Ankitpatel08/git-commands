@@ -78,7 +78,12 @@
   | 2 | `git fetch` | It will fetch new remote branches |
   | 3 | `git fetch --prune` | Combined command of steps 1 & 2 in above |
 
-
+  * ### git merge v/s git rebase
+  | git merge | git rebase |
+  | --------- | ---------- |
+  | git merge [sourceBranch] [targetBranch] | git checkout [sourceBranch] & git rebase [targetBranch] |
+  | Create New merge commit in the target branch that ties to gather the history of both branches | Moves history of source branch to the tip of the target branch |
+  | hard to read history | much cleaner history |
 
 * # Other useful git commands
   | Sr. No. | Command | Description |
