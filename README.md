@@ -19,25 +19,26 @@
         | 1       | `git init`                                                                 | create a new local repository                                                                                |
         | 2       | `git clone /path/to/repository`                                            | create a working copy of a local repository                                                                  |
         | 3       | `git clone username@host:/path/to/repository`                              | create working copy of remote repository                                                                     |
-        | 4       | `git remote add origin [server]`                                           | to connect local repository to remote repository to push on server                                           |
-        | 5       | `git remove -v`                                                            | List all currently configured remore repositories                                                            |
-        | 6       | `git push origin master`                                                   | send changes to the master branch of your remore repository                                                  |
-        | 7       | `git status`                                                               | List the files you've changed and those you still need to add or commit                                      |
-        | 8       | `git checkout -b [branchName]`                                             | create a new branch and switch to it                                                                         |
-        | 9       | `git checkout [branchName]`                                                | switch from one branch to another                                                                            |
-        | 10      | `git branch`                                                               | List all the branches in your repo                                                                           |
-        | 10      | `git branch -d [branchName]`                                               | delete branch from local repository                                                                          |
-        | 11      | `git push --all origin`                                                    | push all branches to your remote repository                                                                  |
-        | 12      | `git push origin :[branchName]` or `git push origin --delete [branchName]` | delete a branch on your remote repository                                                                    |
-        | 12      | `git pull`                                                                 | fetch and merge changes on the remote server to your working directory                                       |
-        | 13      | `git merge [brnachName]`                                                   | to merge different branch into active branch                                                                 |
-        | 14      | `git diff`                                                                 | view all the merge conflicts                                                                                 |
-        | 14      | `git diff --base [fileName]`                                               | view the conflicts against the base file                                                                     |
-        | 15      | `git diff [sourceBranch] [targetBranch]`                                   | Preview changes before merging                                                                               |
-        | 16      | `git fetch origin`                                                         | fetch the latest history from the remote and point your local brach at it (will keep local changes as it is) |
-        | 17      | `git reset --hard origin/[branchName]`                                     | discard local changes and make local brnach same as remote repository                                        |
-        | 18      | `git clean -fd`                                                            | delete untracked files                                                                                       |
-        |  |
+        | 4       | `git clone https://github.com/:username/:repo-name.git`                    | (Alternative solution) create working copy of remote repository                                              |
+        | 5       | `git remote add origin [server]`                                           | to connect local repository to remote repository to push on server                                           |
+        | 6       | `git remove -v`                                                            | List all currently configured remore repositories                                                            |
+        | 7       | `git push origin master`                                                   | send changes to the master branch of your remore repository                                                  |
+        | 8       | `git status`                                                               | List the files you've changed and those you still need to add or commit                                      |
+        | 9       | `git checkout -b [branchName]`                                             | create a new branch and switch to it                                                                         |
+        | 10      | `git checkout [branchName]`                                                | switch from one branch to another                                                                            |
+        | 11      | `git branch`                                                               | List all the branches in your repo                                                                           |
+        | 12      | `git branch -d [branchName]`                                               | delete branch from local repository                                                                          |
+        | 13      | `git push --all origin`                                                    | push all branches to your remote repository                                                                  |
+        | 14      | `git push origin :[branchName]` or `git push origin --delete [branchName]` | delete a branch on your remote repository                                                                    |
+        | 15      | `git pull`                                                                 | fetch and merge changes on the remote server to your working directory                                       |
+        | 16      | `git merge [brnachName]`                                                   | to merge different branch into active branch                                                                 |
+        | 17      | `git diff`                                                                 | view all the merge conflicts                                                                                 |
+        | 18      | `git diff --base [fileName]`                                               | view the conflicts against the base file                                                                     |
+        | 19      | `git diff [sourceBranch] [targetBranch]`                                   | Preview changes before merging                                                                               |
+        | 20      | `git fetch origin`                                                         | fetch the latest history from the remote and point your local brach at it (will keep local changes as it is) |
+        | 21      | `git reset --hard origin/[branchName]`                                     | discard local changes and make local brnach same as remote repository                                        |
+        | 22      | `git clean -fd`                                                            | delete untracked files                                                                                       |
+        |         |
 
 -   ### Files
 
