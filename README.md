@@ -2,14 +2,16 @@
 
     *   ### Configuration
 
-        | Sr. No. | Command                                                         | Description                                          |
-        | ------- | --------------------------------------------------------------- | ---------------------------------------------------- |
-        | 1       | `git config --global user.name "Ankit Patel"`                   | Configure username used with commit                  |
-        | 2       | `git config -- global user.email "ankitpansuriya007@gmail.com"` | configure email address to be used with commits      |
-        | 3       | `git config color.ui`                                           | colorfil git output                                  |
-        | 4       | `git config format.pretty oneline`                              | show log on just one line per commit                 |
-        | 5       | `git add -i`                                                    | interactive adding                                   |
-        | 6       | `git config credential.helper store`                            | Store credentials (email and password) in local repo |
+        | Sr. No. | Command                                                         | Description                                                                |
+        | ------- | --------------------------------------------------------------- | -------------------------------------------------------------------------- |
+        | 1       | `git config --global user.name "Ankit Patel"`                   | Configure username used with commit                                        |
+        | 2       | `git config -- global user.email "ankitpansuriya007@gmail.com"` | configure email address to be used with commits                            |
+        | 3       | `git config user.name "username"`                               | configure username to be used with commits in particular(single) repo      |
+        | 4       | `git config user.email "somemail@domain.com"`                   | configure email address to be used with commits in particular(single) repo |
+        | 5       | `git config color.ui`                                           | colorfil git output                                                        |
+        | 6       | `git config format.pretty oneline`                              | show log on just one line per commit                                       |
+        | 7       | `git add -i`                                                    | interactive adding                                                         |
+        | 8       | `git config credential.helper store`                            | Store credentials (email and password) in local repo                       |
 
     *   ### Repository
         | Sr. No. | Command                                                                    | Description                                                                                                  |
@@ -34,8 +36,8 @@
         | 15      | `git diff [sourceBranch] [targetBranch]`                                   | Preview changes before merging                                                                               |
         | 16      | `git fetch origin`                                                         | fetch the latest history from the remote and point your local brach at it (will keep local changes as it is) |
         | 17      | `git reset --hard origin/[branchName]`                                     | discard local changes and make local brnach same as remote repository                                        |
-        | 18      | `git clean -fd`                                     | delete untracked files                                        
-                                |
+        | 18      | `git clean -fd`                                                            | delete untracked files                                                                                       |
+        |  |
 
 -   ### Files
 
