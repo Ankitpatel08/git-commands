@@ -5,7 +5,7 @@
         | Sr. No. | Command                                                         | Description                                                                |
         | ------- | --------------------------------------------------------------- | -------------------------------------------------------------------------- |
         | 1       | `git config --global user.name "Ankit Patel"`                   | Configure username used with commit                                        |
-        | 2       | `git config -- global user.email "ankitpansuriya007@gmail.com"` | configure email address to be used with commits                            |
+        | 2       | `git config --global user.email "ankitpansuriya007@gmail.com"` | configure email address to be used with commits                            |
         | 3       | `git config user.name "username"`                               | configure username to be used with commits in particular(single) repo      |
         | 4       | `git config user.email "somemail@domain.com"`                   | configure email address to be used with commits in particular(single) repo |
         | 5       | `git config color.ui`                                           | colorfil git output                                                        |
@@ -22,6 +22,7 @@
         | 4       | `git clone https://github.com/:username/:repo-name.git`                    | (Alternative solution) create working copy of remote repository                                              |
         | 5       | `git remote add origin [server]`                                           | to connect local repository to remote repository to push on server                                           |
         | 6       | `git remove -v`                                                            | List all currently configured remore repositories                                                            |
+        | 6       | `git remote remove origin`                                                 | remove origin from the repository                                                                            |
         | 7       | `git push origin master`                                                   | send changes to the master branch of your remore repository                                                  |
         | 8       | `git status`                                                               | List the files you've changed and those you still need to add or commit                                      |
         | 9       | `git checkout -b [branchName]`                                             | create a new branch and switch to it                                                                         |
